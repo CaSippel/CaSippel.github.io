@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-   <html>
-   <head>
-       <meta charset="UTF-8">
-       <title>Welcome to my website!</title>
-       <link rel="stylesheet" type="text/css" href="template.css">
-   </head> 
-   <body>
-        Hello world!
-   </body>
-</html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <title>CaSippel</title>
+    <!-- Dependencies -->
+    <link rel="prefetch stylesheet" href="static/styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  </head> 
+  <body>
+    <div id="side-nav" class="column hidden">
+      <div class="header">
+          <img id="hamburger-side-nav" src="static/icons/hamburger-menu.svg">
+      </div>
+      <div class="content">
+        <div class="nav-item">nav item 1</div>
+        <div class="nav-item">nav item 2</div>
+      </div>
+    </div>
+
+    <div id="main-nav" class="header">
+      <img id="hamburger-main-nav" class="hidden" src="static/icons/hamburger-menu.svg">
+      <div class="nav-item">nav item 1</div>
+      <div class="nav-item">nav item 2</div>
+    </div>
+    <div class="body column">
+      content goes here
+    </div>
+
+    <!-- go to top button -->
+    <button id="go-to-top" class="button-scroll" title="Go to top" alt="Go to top">
+      <img src="static/icons/arrow-up.svg" />
+    </button>
+  </body>
+</html> 
